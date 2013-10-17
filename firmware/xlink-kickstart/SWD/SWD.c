@@ -39,7 +39,7 @@ void __forceinline SWD_WRITE_BIT (uint32_t bit)
     PIN_SWCLK_TCK_CLR();
     PIN_DELAY();
     PIN_SWCLK_TCK_SET();
-    PIN_DELAY();
+   	PIN_DELAY();
 }
 
 // Read SWIO
@@ -123,8 +123,9 @@ uint8_t SWDTransfer(uint32_t request, uint32_t *data)
         if (request & XLINK_TRANSFER_RnW) {                                           
             val = 0;                                                                  
             parity = 0;                                                               
-            for (n = 32; n; n--) {                // DATA[31:0]                                                
-                parity += SWD_READ_BIT();                                                          
+            for (n = 32; n; n--) {                // DATA[31:0]   
+								bit = SWD_READ_BIT();
+                parity += bit;                                                          
                 val >>= 1;                                                              
                 val  |= bit << 31;                                                      
             }                                                                         

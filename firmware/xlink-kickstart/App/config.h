@@ -34,53 +34,6 @@
 #define XLINK_PRODUCT             "XLink-KickStart"
 #define XLINK_SER_NUM             "0000101201"
 #define XLINK_FW_VER                "1.0"   // Firmware Version
-
-///@}
-
-//**************************************************************************************************
-/** 
-\defgroup XLINK_Config_PortIO_gr CMSIS-XLINK Hardware I/O Pin Access
-\ingroup XLINK_ConfigIO_gr 
-@{
-
-Standard I/O Pins of the CMSIS-XLINK Hardware Debug Port support standard JTAG mode
-and Serial Wire Debug (SWD) mode. In SWD mode only 2 pins are required to implement the debug 
-interface of a device. The following I/O Pins are provided:
-
-JTAG I/O Pin                 | SWD I/O Pin          | CMSIS-XLINK Hardware pin mode
----------------------------- | -------------------- | ---------------------------------------------
-TCK: Test Clock              | SWCLK: Clock         | Output Push/Pull
-TMS: Test Mode Select        | SWDIO: Data I/O      | Output Push/Pull; Input (for receiving data)
-TDI: Test Data Input         |                      | Output Push/Pull
-TDO: Test Data Output        |                      | Input             
-nTRST: Test Reset (optional) |                      | Output Open Drain with pull-up resistor
-nRESET: Device Reset         | nRESET: Device Reset | Output Open Drain with pull-up resistor
-
-
-XLINK Hardware I/O Pin Access Functions
--------------------------------------
-The various I/O Pins are accessed by functions that implement the Read, Write, Set, or Clear to 
-these I/O Pins. 
-
-For the SWDIO I/O Pin there are additional functions that are called in SWD I/O mode only.
-This functions are provided to achieve faster I/O that is possible with some advanced GPIO 
-peripherals that can independently write/read a single I/O pin without affecting any other pins 
-of the same I/O port. The following SWDIO I/O Pin functions are provided:
- - \ref PIN_SWDIO_OUT_ENABLE to enable the output mode from the XLINK hardware.
- - \ref PIN_SWDIO_OUT_DISABLE to enable the input mode to the XLINK hardware.
- - \ref PIN_SWDIO_IN to read from the SWDIO I/O pin with utmost possible speed.
- - \ref PIN_SWDIO_OUT to write to the SWDIO I/O pin with utmost possible speed.
-*/
-
-
-// Configure XLINK I/O pins ------------------------------
-
-/** Setup JTAG I/O pins: TCK, TMS, TDI, TDO, nTRST, and nRESET.
-Configures the XLINK Hardware I/O pins for JTAG mode:
- - TCK, TMS, TDI, nTRST, nRESET to output mode and set to high level.
- - TDO to input mode.
-*/ 
-static __inline void PORT_JTAG_SETUP (void) {}
  
 /** Setup SWD I/O pins: SWCLK, SWDIO, and nRESET.
 Configures the XLINK Hardware I/O pins for Serial Wire Debug (SWD) mode:
@@ -201,44 +154,6 @@ static __forceinline void PIN_SWDIO_OUT_DISABLE (void)
     GPIOC->BSRRL = (1 << 7);         // PC7输出高电平
 }
 
-/** TDI I/O pin: Get Input.
-\return Current status of the TDI XLINK hardware I/O pin.
-*/
-static __forceinline unsigned long PIN_TDI_IN  (void) {
-  return (0);   // Not available
-}
-
-/** TDI I/O pin: Set Output.
-\param bit Output value for the TDI XLINK hardware I/O pin.
-*/
-static __forceinline void     PIN_TDI_OUT (unsigned long bit) {
-  ;             // Not available
-}
-
-/** TDO I/O pin: Get Input.
-\return Current status of the TDO XLINK hardware I/O pin.
-*/
-static __forceinline unsigned long PIN_TDO_IN  (void) {
-  return (0);   // Not available
-}
-
-/** nTRST I/O pin: Get Input.
-\return Current status of the nTRST XLINK hardware I/O pin.
-*/
-static __forceinline unsigned long PIN_nTRST_IN   (void) {
-  return (0);   // Not available
-}
-
-
-/** nTRST I/O pin: Set Output.
-\param bit JTAG TRST Test Reset pin status:
-           - 0: issue a JTAG TRST Test Reset.
-           - 1: release JTAG TRST Test Reset.
-*/
-static __forceinline void PIN_nTRST_OUT  (unsigned long bit) {
-  ;             // Not available
-}
-
 /** nRESET I/O pin: Get Input.
 \return Current status of the nRESET XLINK hardware I/O pin.
 */
@@ -246,7 +161,6 @@ static __forceinline unsigned long PIN_nRESET_IN  (void)
 {
     return 1;       // Disable
 }
-
 
 /** nRESET I/O pin: Set Output.
 \param bit target device hardware reset pin status:
@@ -327,10 +241,10 @@ static __inline void XLINK_SETUP (void)
 }
 
 // Fixed delay for fast clock generation
-#define DELAY_FAST_CYCLES   5        // 有0.9MHz的数据
+#define DELAY_FAST_CYCLES   2        // 有1MHz的数据
 static __forceinline void PIN_DELAY (void) {
   volatile int32_t count = DELAY_FAST_CYCLES;
-  while (--count);
+  while (--count);	
 }
 
 // Start Timer

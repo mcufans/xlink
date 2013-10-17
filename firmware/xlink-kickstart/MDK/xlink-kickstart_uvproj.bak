@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>xLink-KickStart</TargetName>
+      <TargetName>STM32F103 Flash</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <TargetOption>

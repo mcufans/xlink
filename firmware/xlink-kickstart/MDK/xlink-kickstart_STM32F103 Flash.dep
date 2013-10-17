@@ -1,342 +1,110 @@
 Dependencies for Project 'xlink-kickstart', Target 'STM32F103 Flash': (DO NOT MODIFY !)
-F (..\Lib\src\misc.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\misc.o --omf_browse .\flash\misc.crf --depend .\flash\misc.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\misc.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_adc.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_adc.o --omf_browse .\flash\stm32l1xx_adc.crf --depend .\flash\stm32l1xx_adc.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_adc.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_aes.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_aes.o --omf_browse .\flash\stm32l1xx_aes.crf --depend .\flash\stm32l1xx_aes.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_aes.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_aes_util.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_aes_util.o --omf_browse .\flash\stm32l1xx_aes_util.crf --depend .\flash\stm32l1xx_aes_util.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_aes.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_comp.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_comp.o --omf_browse .\flash\stm32l1xx_comp.crf --depend .\flash\stm32l1xx_comp.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_comp.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_crc.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_crc.o --omf_browse .\flash\stm32l1xx_crc.crf --depend .\flash\stm32l1xx_crc.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_crc.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_dac.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_dac.o --omf_browse .\flash\stm32l1xx_dac.crf --depend .\flash\stm32l1xx_dac.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_dac.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_dbgmcu.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_dbgmcu.o --omf_browse .\flash\stm32l1xx_dbgmcu.crf --depend .\flash\stm32l1xx_dbgmcu.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_dbgmcu.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_dma.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_dma.o --omf_browse .\flash\stm32l1xx_dma.crf --depend .\flash\stm32l1xx_dma.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_dma.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_exti.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_exti.o --omf_browse .\flash\stm32l1xx_exti.crf --depend .\flash\stm32l1xx_exti.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_exti.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_flash.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_flash.o --omf_browse .\flash\stm32l1xx_flash.crf --depend .\flash\stm32l1xx_flash.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_flash.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_flash_ramfunc.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_flash_ramfunc.o --omf_browse .\flash\stm32l1xx_flash_ramfunc.crf --depend .\flash\stm32l1xx_flash_ramfunc.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_flash.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_fsmc.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_fsmc.o --omf_browse .\flash\stm32l1xx_fsmc.crf --depend .\flash\stm32l1xx_fsmc.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_fsmc.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_gpio.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_gpio.o --omf_browse .\flash\stm32l1xx_gpio.crf --depend .\flash\stm32l1xx_gpio.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_gpio.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_i2c.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_i2c.o --omf_browse .\flash\stm32l1xx_i2c.crf --depend .\flash\stm32l1xx_i2c.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_i2c.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_iwdg.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_iwdg.o --omf_browse .\flash\stm32l1xx_iwdg.crf --depend .\flash\stm32l1xx_iwdg.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_iwdg.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_lcd.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_lcd.o --omf_browse .\flash\stm32l1xx_lcd.crf --depend .\flash\stm32l1xx_lcd.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_lcd.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_opamp.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_opamp.o --omf_browse .\flash\stm32l1xx_opamp.crf --depend .\flash\stm32l1xx_opamp.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_opamp.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_pwr.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_pwr.o --omf_browse .\flash\stm32l1xx_pwr.crf --depend .\flash\stm32l1xx_pwr.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_pwr.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_rcc.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_rcc.o --omf_browse .\flash\stm32l1xx_rcc.crf --depend .\flash\stm32l1xx_rcc.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\Lib\src\stm32l1xx_rtc.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_rtc.o --omf_browse .\flash\stm32l1xx_rtc.crf --depend .\flash\stm32l1xx_rtc.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rtc.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_sdio.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_sdio.o --omf_browse .\flash\stm32l1xx_sdio.crf --depend .\flash\stm32l1xx_sdio.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_sdio.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_spi.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_spi.o --omf_browse .\flash\stm32l1xx_spi.crf --depend .\flash\stm32l1xx_spi.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_spi.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_syscfg.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_syscfg.o --omf_browse .\flash\stm32l1xx_syscfg.crf --depend .\flash\stm32l1xx_syscfg.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_syscfg.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_tim.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_tim.o --omf_browse .\flash\stm32l1xx_tim.crf --depend .\flash\stm32l1xx_tim.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_tim.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_usart.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_usart.o --omf_browse .\flash\stm32l1xx_usart.crf --depend .\flash\stm32l1xx_usart.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_usart.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\Lib\src\stm32l1xx_wwdg.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\stm32l1xx_wwdg.o --omf_browse .\flash\stm32l1xx_wwdg.crf --depend .\flash\stm32l1xx_wwdg.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_wwdg.h)(0x52418CC4)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\Lib\inc\stm32l1xx_rcc.h)(0x52418CC4)
-F (..\SWD\SWD.c)(0x525EA608)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\swd.o --omf_browse .\flash\swd.crf --depend .\flash\swd.d)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\config.h)(0x525EB53A)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\protocol.h)(0x525EA9D8)
-I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
-F (..\App\App.c)(0x525EB56A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\app.o --omf_browse .\flash\app.crf --depend .\flash\app.d)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\config.h)(0x525EB53A)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\App.h)(0x525D547C)
-I (D:\xlink\trunk\firmware\xlink-kickstart\INC\type.h)(0x525D4F4E)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usb.h)(0x525D51C6)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbuser.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\usbconfig.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\protocol.h)(0x525EA9D8)
-I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
-F (..\App\App.h)(0x525D547C)()
-F (..\App\startup_stm32l1xx_md.s)(0x52418CC4)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-o .\flash\startup_stm32l1xx_md.o --depend .\flash\startup_stm32l1xx_md.d)
-F (..\App\system_stm32l1xx.c)(0x52418CC4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\system_stm32l1xx.o --omf_browse .\flash\system_stm32l1xx.crf --depend .\flash\system_stm32l1xx.d)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-F (..\App\protocol.c)(0x525EA83C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\protocol.o --omf_browse .\flash\protocol.crf --depend .\flash\protocol.d)
-I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\config.h)(0x525EB53A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\protocol.h)(0x525EA9D8)
-I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
-F (..\App\protocol.h)(0x525EA9D8)()
-F (..\App\config.h)(0x525EB53A)()
-F (..\App\usbuser.c)(0x525E8B1E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\usbuser.o --omf_browse .\flash\usbuser.crf --depend .\flash\usbuser.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\app.h)(0x525D547C)
-I (D:\xlink\trunk\firmware\xlink-kickstart\INC\type.h)(0x525D4F4E)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\config.h)(0x525EB53A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\protocol.h)(0x525EA9D8)
-I (C:\Keil\ARM\ARMCC\include\stddef.h)(0x51C7B744)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usb.h)(0x525D51C6)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbuser.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\usbconfig.h)(0x52418CC4)
-F (..\USB\usb.h)(0x525D51C6)()
-F (..\USB\usbcore.c)(0x525D5236)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\usbcore.o --omf_browse .\flash\usbcore.crf --depend .\flash\usbcore.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\INC\type.h)(0x525D4F4E)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usb.h)(0x525D51C6)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\config.h)(0x525EB53A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbuser.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\usbconfig.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbcore.h)(0x52418CC2)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbdesc.h)(0x52418CC4)
-F (..\USB\usbcore.h)(0x52418CC2)()
-F (..\USB\usbdesc.c)(0x525D5240)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\usbdesc.o --omf_browse .\flash\usbdesc.crf --depend .\flash\usbdesc.d)
-I (D:\xlink\trunk\firmware\xlink-kickstart\INC\type.h)(0x525D4F4E)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usb.h)(0x525D51C6)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\config.h)(0x525EB53A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbuser.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\usbconfig.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbdesc.h)(0x52418CC4)
-F (..\USB\usbdesc.h)(0x52418CC4)()
-F (..\USB\usbhw_STM32F10x.c)(0x525D523E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32L1xx-DSTM32F10X_MD -o .\flash\usbhw_stm32f10x.o --omf_browse .\flash\usbhw_stm32f10x.crf --depend .\flash\usbhw_stm32f10x.d)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x51FC63BA)
-I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x51C7B54A)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
-I (C:\Keil\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x51C7AFE8)
-I (D:\xlink\trunk\firmware\xlink-kickstart\INC\type.h)(0x525D4F4E)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usb.h)(0x525D51C6)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\config.h)(0x525EB53A)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbuser.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\App\usbconfig.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbreg_STM32F10x.h)(0x52418CC4)
-I (D:\xlink\trunk\firmware\xlink-kickstart\USB\usbcore.h)(0x52418CC2)
-F (..\USB\usbreg_STM32F10x.h)(0x52418CC4)()
-F (..\USB\usbuser.h)(0x52418CC4)()
-F (..\INC\type.h)(0x525D4F4E)()
+F (..\SWD\SWD.c)(0x525F4A69)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 -Otime --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -DSTM32F10X_MD -o ".\Flash\swd.o" --omf_browse ".\Flash\swd.crf" --depend ".\Flash\swd.d")
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x4FBC2CA2)
+I (F:\Keil454\ARM\CMSIS\Include\core_cm3.h)(0x4F6A9582)
+I (F:\Keil454\ARM\RV31\Inc\stdint.h)(0x4F58357C)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h)(0x4FA9C1FC)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x4FBC2CA2)
+I (..\App\config.h)(0x525F4D28)
+I (..\App\protocol.h)(0x525F2D9C)
+I (F:\Keil454\ARM\RV31\Inc\stddef.h)(0x4F58357C)
+F (..\App\App.c)(0x525F4B2C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 -Otime --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -DSTM32F10X_MD -o ".\Flash\app.o" --omf_browse ".\Flash\app.crf" --depend ".\Flash\app.d")
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x4FBC2CA2)
+I (F:\Keil454\ARM\CMSIS\Include\core_cm3.h)(0x4F6A9582)
+I (F:\Keil454\ARM\RV31\Inc\stdint.h)(0x4F58357C)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h)(0x4FA9C1FC)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x4FBC2CA2)
+I (..\App\config.h)(0x525F4D28)
+I (..\App\App.h)(0x525F2D9C)
+I (..\INC\type.h)(0x525F2D9C)
+I (..\USB\usb.h)(0x525F2D9D)
+I (..\USB\usbuser.h)(0x525F2D9E)
+I (..\App\usbconfig.h)(0x525F2D9C)
+I (..\App\protocol.h)(0x525F2D9C)
+I (F:\Keil454\ARM\RV31\Inc\stddef.h)(0x4F58357C)
+F (..\App\App.h)(0x525F2D9C)()
+F (..\App\startup_stm32l1xx_md.s)(0x525F2D9C)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -o ".\Flash\startup_stm32l1xx_md.o" --depend ".\Flash\startup_stm32l1xx_md.d")
+F (..\App\system_stm32l1xx.c)(0x525F2D9C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 -Otime --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -DSTM32F10X_MD -o ".\Flash\system_stm32l1xx.o" --omf_browse ".\Flash\system_stm32l1xx.crf" --depend ".\Flash\system_stm32l1xx.d")
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x4FBC2CA2)
+I (F:\Keil454\ARM\CMSIS\Include\core_cm3.h)(0x4F6A9582)
+I (F:\Keil454\ARM\RV31\Inc\stdint.h)(0x4F58357C)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h)(0x4FA9C1FC)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x4FBC2CA2)
+F (..\App\protocol.c)(0x525F35D9)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 -Otime --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -DSTM32F10X_MD -o ".\Flash\protocol.o" --omf_browse ".\Flash\protocol.crf" --depend ".\Flash\protocol.d")
+I (F:\Keil454\ARM\RV31\Inc\string.h)(0x4F58357C)
+I (..\App\config.h)(0x525F4D28)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x4FBC2CA2)
+I (F:\Keil454\ARM\CMSIS\Include\core_cm3.h)(0x4F6A9582)
+I (F:\Keil454\ARM\RV31\Inc\stdint.h)(0x4F58357C)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h)(0x4FA9C1FC)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x4FBC2CA2)
+I (..\App\protocol.h)(0x525F2D9C)
+I (F:\Keil454\ARM\RV31\Inc\stddef.h)(0x4F58357C)
+F (..\App\protocol.h)(0x525F2D9C)()
+F (..\App\config.h)(0x525F4D28)()
+F (..\App\usbuser.c)(0x525F2D9C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 -Otime --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -DSTM32F10X_MD -o ".\Flash\usbuser.o" --omf_browse ".\Flash\usbuser.crf" --depend ".\Flash\usbuser.d")
+I (..\App\app.h)(0x525F2D9C)
+I (..\INC\type.h)(0x525F2D9C)
+I (..\App\config.h)(0x525F4D28)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x4FBC2CA2)
+I (F:\Keil454\ARM\CMSIS\Include\core_cm3.h)(0x4F6A9582)
+I (F:\Keil454\ARM\RV31\Inc\stdint.h)(0x4F58357C)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h)(0x4FA9C1FC)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x4FBC2CA2)
+I (..\App\protocol.h)(0x525F2D9C)
+I (F:\Keil454\ARM\RV31\Inc\stddef.h)(0x4F58357C)
+I (..\USB\usb.h)(0x525F2D9D)
+I (..\USB\usbuser.h)(0x525F2D9E)
+I (..\App\usbconfig.h)(0x525F2D9C)
+F (..\USB\usb.h)(0x525F2D9D)()
+F (..\USB\usbcore.c)(0x525F2D9D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 -Otime --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -DSTM32F10X_MD -o ".\Flash\usbcore.o" --omf_browse ".\Flash\usbcore.crf" --depend ".\Flash\usbcore.d")
+I (..\INC\type.h)(0x525F2D9C)
+I (..\USB\usb.h)(0x525F2D9D)
+I (..\App\config.h)(0x525F4D28)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x4FBC2CA2)
+I (F:\Keil454\ARM\CMSIS\Include\core_cm3.h)(0x4F6A9582)
+I (F:\Keil454\ARM\RV31\Inc\stdint.h)(0x4F58357C)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h)(0x4FA9C1FC)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x4FBC2CA2)
+I (..\USB\usbuser.h)(0x525F2D9E)
+I (..\App\usbconfig.h)(0x525F2D9C)
+I (..\USB\usbcore.h)(0x525F2D9D)
+I (..\USB\usbdesc.h)(0x525F2D9D)
+F (..\USB\usbcore.h)(0x525F2D9D)()
+F (..\USB\usbdesc.c)(0x525F2D9D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 -Otime --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -DSTM32F10X_MD -o ".\Flash\usbdesc.o" --omf_browse ".\Flash\usbdesc.crf" --depend ".\Flash\usbdesc.d")
+I (..\INC\type.h)(0x525F2D9C)
+I (..\USB\usb.h)(0x525F2D9D)
+I (..\App\config.h)(0x525F4D28)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x4FBC2CA2)
+I (F:\Keil454\ARM\CMSIS\Include\core_cm3.h)(0x4F6A9582)
+I (F:\Keil454\ARM\RV31\Inc\stdint.h)(0x4F58357C)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h)(0x4FA9C1FC)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x4FBC2CA2)
+I (..\USB\usbuser.h)(0x525F2D9E)
+I (..\App\usbconfig.h)(0x525F2D9C)
+I (..\USB\usbdesc.h)(0x525F2D9D)
+F (..\USB\usbdesc.h)(0x525F2D9D)()
+F (..\USB\usbhw_STM32F10x.c)(0x525F2D9D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 -Otime --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -DSTM32F10X_MD -o ".\Flash\usbhw_stm32f10x.o" --omf_browse ".\Flash\usbhw_stm32f10x.crf" --depend ".\Flash\usbhw_stm32f10x.d")
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h)(0x4FBC2CA2)
+I (F:\Keil454\ARM\CMSIS\Include\core_cm3.h)(0x4F6A9582)
+I (F:\Keil454\ARM\RV31\Inc\stdint.h)(0x4F58357C)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h)(0x4FA9C1FC)
+I (F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h)(0x4FBC2CA2)
+I (..\INC\type.h)(0x525F2D9C)
+I (..\USB\usb.h)(0x525F2D9D)
+I (..\App\config.h)(0x525F4D28)
+I (..\USB\usbuser.h)(0x525F2D9E)
+I (..\App\usbconfig.h)(0x525F2D9C)
+I (..\USB\usbreg_STM32F10x.h)(0x525F2D9E)
+I (..\USB\usbcore.h)(0x525F2D9D)
+F (..\USB\usbreg_STM32F10x.h)(0x525F2D9E)()
+F (..\USB\usbuser.h)(0x525F2D9E)()
+F (..\INC\type.h)(0x525F2D9C)()

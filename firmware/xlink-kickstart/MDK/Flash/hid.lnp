@@ -1,0 +1,4 @@
+--cpu Cortex-M3 ".\flash\swd.o" ".\flash\app.o" ".\flash\startup_stm32l1xx_md.o" ".\flash\system_stm32l1xx.o" ".\flash\protocol.o" ".\flash\usbuser.o" ".\flash\usbcore.o" ".\flash\usbdesc.o" ".\flash\usbhw_stm32f10x.o" --library_type=microlib --strict --scatter ".\Flash\hid.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Flash\hid.map" -o .\Flash\hid.axf

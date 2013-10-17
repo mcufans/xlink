@@ -44,7 +44,7 @@
 #define USB_IF_NUM          1
 #define USB_EP_NUM          2
 #define USB_MAX_PACKET0     8
-#define USB_DBL_BUF_EP      0x0000
+#define USB_DBL_BUF_EP      0xFFFF
 
 
 /*

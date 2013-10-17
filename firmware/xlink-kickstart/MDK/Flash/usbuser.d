@@ -1,0 +1,15 @@
+.\Flash\usbuser.o: ..\App\usbuser.c
+.\Flash\usbuser.o: ..\App\app.h
+.\Flash\usbuser.o: ..\INC\type.h
+.\Flash\usbuser.o: ..\App\config.h
+.\Flash\usbuser.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h
+.\Flash\usbuser.o: F:\Keil454\ARM\CMSIS\Include\core_cm3.h
+.\Flash\usbuser.o: F:\Keil454\ARM\RV31\Inc\stdint.h
+.\Flash\usbuser.o: F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h
+.\Flash\usbuser.o: F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h
+.\Flash\usbuser.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h
+.\Flash\usbuser.o: ..\App\protocol.h
+.\Flash\usbuser.o: F:\Keil454\ARM\RV31\Inc\stddef.h
+.\Flash\usbuser.o: ..\USB\usb.h
+.\Flash\usbuser.o: ..\USB\usbuser.h
+.\Flash\usbuser.o: ..\App\usbconfig.h

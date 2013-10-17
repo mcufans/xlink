@@ -1,0 +1,14 @@
+.\Flash\usbhw_stm32f10x.o: ..\USB\usbhw_STM32F10x.c
+.\Flash\usbhw_stm32f10x.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h
+.\Flash\usbhw_stm32f10x.o: F:\Keil454\ARM\CMSIS\Include\core_cm3.h
+.\Flash\usbhw_stm32f10x.o: F:\Keil454\ARM\RV31\Inc\stdint.h
+.\Flash\usbhw_stm32f10x.o: F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h
+.\Flash\usbhw_stm32f10x.o: F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h
+.\Flash\usbhw_stm32f10x.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h
+.\Flash\usbhw_stm32f10x.o: ..\INC\type.h
+.\Flash\usbhw_stm32f10x.o: ..\USB\usb.h
+.\Flash\usbhw_stm32f10x.o: ..\App\config.h
+.\Flash\usbhw_stm32f10x.o: ..\USB\usbuser.h
+.\Flash\usbhw_stm32f10x.o: ..\App\usbconfig.h
+.\Flash\usbhw_stm32f10x.o: ..\USB\usbreg_STM32F10x.h
+.\Flash\usbhw_stm32f10x.o: ..\USB\usbcore.h

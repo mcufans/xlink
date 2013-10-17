@@ -1,0 +1,10 @@
+.\Flash\swd.o: ..\SWD\SWD.c
+.\Flash\swd.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h
+.\Flash\swd.o: F:\Keil454\ARM\CMSIS\Include\core_cm3.h
+.\Flash\swd.o: F:\Keil454\ARM\RV31\Inc\stdint.h
+.\Flash\swd.o: F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h
+.\Flash\swd.o: F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h
+.\Flash\swd.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h
+.\Flash\swd.o: ..\App\config.h
+.\Flash\swd.o: ..\App\protocol.h
+.\Flash\swd.o: F:\Keil454\ARM\RV31\Inc\stddef.h

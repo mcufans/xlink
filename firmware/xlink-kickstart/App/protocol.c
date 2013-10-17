@@ -42,7 +42,7 @@ const char XLINK_FW_Ver [] = XLINK_FW_VER;      // Firmware version string
 // id:      info identifier
 // info:    pointer to info data
 // return:  number of bytes in info data
-static uint8_t XLINK_Info(uint8_t id, uint8_t *info) 
+uint8_t XLINK_Info(uint8_t id, uint8_t *info) 
 {
     uint8_t length = 0;
 
@@ -86,7 +86,7 @@ static uint8_t XLINK_Info(uint8_t id, uint8_t *info)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_LED(uint8_t *request, uint8_t *response) 
+uint32_t XLINK_LED(uint8_t *request, uint8_t *response) 
 {
     switch (*request) {
     case XLINK_DEBUGER_LED:
@@ -108,7 +108,7 @@ static uint32_t XLINK_LED(uint8_t *request, uint8_t *response)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_Connect(uint8_t *request, uint8_t *response) 
+uint32_t XLINK_Connect(uint8_t *request, uint8_t *response) 
 {
     uint32_t port;
 
@@ -135,7 +135,7 @@ static uint32_t XLINK_Connect(uint8_t *request, uint8_t *response)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_Disconnect(uint8_t *response) 
+uint32_t XLINK_Disconnect(uint8_t *response) 
 {
     PORT_OFF();
     *response = XLINK_ERROR_OK;
@@ -146,7 +146,7 @@ static uint32_t XLINK_Disconnect(uint8_t *response)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_SWJ_Pins(uint8_t *request, uint8_t *response) 
+uint32_t XLINK_SWJ_Pins(uint8_t *request, uint8_t *response) 
 {
     uint32_t value;
     uint32_t select;
@@ -199,7 +199,7 @@ static uint32_t XLINK_SWJ_Pins(uint8_t *request, uint8_t *response)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_SWJ_Clock(uint8_t *request, uint8_t *response) 
+uint32_t XLINK_SWJ_Clock(uint8_t *request, uint8_t *response) 
 {
     uint32_t clock;
 
@@ -222,7 +222,7 @@ static uint32_t XLINK_SWJ_Clock(uint8_t *request, uint8_t *response)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_SWJ_Sequence(uint8_t *request, uint8_t *response) 
+uint32_t XLINK_SWJ_Sequence(uint8_t *request, uint8_t *response) 
 {
     uint32_t count;
 
@@ -237,7 +237,7 @@ static uint32_t XLINK_SWJ_Sequence(uint8_t *request, uint8_t *response)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_SWD_Configure(uint8_t *request, uint8_t *response) 
+uint32_t XLINK_SWD_Configure(uint8_t *request, uint8_t *response) 
 {
     uint8_t value;
 
@@ -252,7 +252,7 @@ static uint32_t XLINK_SWD_Configure(uint8_t *request, uint8_t *response)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_SWD_Abort(uint8_t *request, uint8_t *response) 
+uint32_t XLINK_SWD_Abort(uint8_t *request, uint8_t *response) 
 {
     uint32_t data;
 
@@ -269,7 +269,7 @@ static uint32_t XLINK_SWD_Abort(uint8_t *request, uint8_t *response)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_TransferConfigure(uint8_t *request, uint8_t *response) 
+uint32_t XLINK_TransferConfigure(uint8_t *request, uint8_t *response) 
 {
     idle_cycles = *(request+0);
     retry_count = *(request+1) | (*(request+2) << 8);
@@ -282,7 +282,7 @@ static uint32_t XLINK_TransferConfigure(uint8_t *request, uint8_t *response)
 // request:  pointer to request data
 // response: pointer to response data
 // return:   number of bytes in response
-static uint32_t XLINK_SWDTransferBlock(uint8_t *request, uint8_t *response) 
+uint32_t XLINK_SWDTransferBlock(uint8_t *request, uint8_t *response) 
 {
     uint32_t  request_count;
     uint32_t  request_value;

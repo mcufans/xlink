@@ -1,0 +1,11 @@
+.\Flash\protocol.o: ..\App\protocol.c
+.\Flash\protocol.o: F:\Keil454\ARM\RV31\Inc\string.h
+.\Flash\protocol.o: ..\App\config.h
+.\Flash\protocol.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h
+.\Flash\protocol.o: F:\Keil454\ARM\CMSIS\Include\core_cm3.h
+.\Flash\protocol.o: F:\Keil454\ARM\RV31\Inc\stdint.h
+.\Flash\protocol.o: F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h
+.\Flash\protocol.o: F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h
+.\Flash\protocol.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h
+.\Flash\protocol.o: ..\App\protocol.h
+.\Flash\protocol.o: F:\Keil454\ARM\RV31\Inc\stddef.h

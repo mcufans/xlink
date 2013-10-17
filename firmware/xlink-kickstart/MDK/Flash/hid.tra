@@ -1,0 +1,27 @@
+*** Creating Trace Output File '.\Flash\hid.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\flash\swd.o"'
+### List of Objects: adding '".\flash\app.o"'
+### List of Objects: adding '".\flash\startup_stm32l1xx_md.o"'
+### List of Objects: adding '".\flash\system_stm32l1xx.o"'
+### List of Objects: adding '".\flash\protocol.o"'
+### List of Objects: adding '".\flash\usbuser.o"'
+### List of Objects: adding '".\flash\usbcore.o"'
+### List of Objects: adding '".\flash\usbdesc.o"'
+### List of Objects: adding '".\flash\usbhw_stm32f10x.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\flash\swd.o" ".\flash\app.o" ".\flash\startup_stm32l1xx_md.o" ".\flash\system_stm32l1xx.o" ".\flash\protocol.o" ".\flash\usbuser.o" ".\flash\usbcore.o" ".\flash\usbdesc.o" ".\flash\usbhw_stm32f10x.o" --library_type=microlib --strict --scatter ".\Flash\hid.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Flash\hid.map" -o .\Flash\hid.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Flash\hid.axf'
+### ADS-LD Command File: '.\Flash\hid.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Flash\hid.lnp', Handle=0x00001304
+### Writing '.lnp' file
+### ADS-LD Command file '.\Flash\hid.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

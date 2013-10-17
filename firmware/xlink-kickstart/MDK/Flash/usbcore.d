@@ -1,0 +1,14 @@
+.\Flash\usbcore.o: ..\USB\usbcore.c
+.\Flash\usbcore.o: ..\INC\type.h
+.\Flash\usbcore.o: ..\USB\usb.h
+.\Flash\usbcore.o: ..\App\config.h
+.\Flash\usbcore.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\stm32l1xx.h
+.\Flash\usbcore.o: F:\Keil454\ARM\CMSIS\Include\core_cm3.h
+.\Flash\usbcore.o: F:\Keil454\ARM\RV31\Inc\stdint.h
+.\Flash\usbcore.o: F:\Keil454\ARM\CMSIS\Include\core_cmInstr.h
+.\Flash\usbcore.o: F:\Keil454\ARM\CMSIS\Include\core_cmFunc.h
+.\Flash\usbcore.o: F:\Keil454\ARM\Inc\ST\STM32L1xx\system_stm32l1xx.h
+.\Flash\usbcore.o: ..\USB\usbuser.h
+.\Flash\usbcore.o: ..\App\usbconfig.h
+.\Flash\usbcore.o: ..\USB\usbcore.h
+.\Flash\usbcore.o: ..\USB\usbdesc.h

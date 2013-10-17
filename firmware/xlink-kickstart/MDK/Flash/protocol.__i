@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O3 -Otime --apcs=interwork -I..\App -I..\INC -I..\Lib\inc -I..\SWD -I..\USB -I F:\Keil454\ARM\RV31\Inc -I F:\Keil454\ARM\CMSIS\Include -I F:\Keil454\ARM\Inc\ST\STM32L1xx -DSTM32F10X_MD -o ".\Flash\protocol.o" --omf_browse ".\Flash\protocol.crf" --depend ".\Flash\protocol.d" "..\App\protocol.c"

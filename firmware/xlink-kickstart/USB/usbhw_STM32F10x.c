@@ -289,7 +289,7 @@ void USB_ConfigEP (USB_ENDPOINT_DESCRIPTOR *pEPD) {
       break;
     case USB_ENDPOINT_TYPE_BULK:
       val = EP_BULK;
-      if (USB_DBL_BUF_EP & (1 << num)) {
+      if (USB_DBL_BUF_EP & (1 << num)) { // Double buffer
         val |= EP_KIND;
       }
       break;

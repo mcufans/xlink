@@ -1,0 +1,463 @@
+ARM Linker, 4.1 [Build 894] [Standard]
+
+==============================================================================
+
+Section Cross References
+
+    swd.o(.text) refers to protocol.o(.data) for turnaround
+    app.o(.text) refers to usbhw_stm32f10x.o(.text) for USB_Init
+    app.o(.text) refers to protocol.o(.text) for ProtocolInit
+    app.o(.text) refers to usbuser.o(.text) for USB_configured
+    app.o(.text) refers to app.o(.bss) for .bss
+    app.o(.text) refers to app.o(.data) for .data
+    startup_stm32l1xx_md.o(RESET) refers to startup_stm32l1xx_md.o(STACK) for __initial_sp
+    startup_stm32l1xx_md.o(RESET) refers to startup_stm32l1xx_md.o(.text) for Reset_Handler
+    startup_stm32l1xx_md.o(RESET) refers to usbhw_stm32f10x.o(.text) for USB_LP_IRQHandler
+    startup_stm32l1xx_md.o(.text) refers to system_stm32l1xx.o(.text) for SystemInit
+    startup_stm32l1xx_md.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_stm32l1xx.o(.text) refers to system_stm32l1xx.o(.data) for .data
+    protocol.o(.text) refers to swd.o(.text) for SWDOutTMSTCK
+    protocol.o(.text) refers to protocol.o(.constdata) for .constdata
+    protocol.o(.text) refers to protocol.o(.data) for .data
+    usbuser.o(.text) refers to usbhw_stm32f10x.o(.text) for USB_WriteEP
+    usbuser.o(.text) refers to protocol.o(.text) for ProtocolProcCommand
+    usbuser.o(.text) refers to usbuser.o(.data) for .data
+    usbuser.o(.text) refers to usbuser.o(.bss) for .bss
+    usbuser.o(.constdata) refers to usbcore.o(.text) for USB_EndPoint0
+    usbuser.o(.constdata) refers to usbuser.o(.text) for USB_EndPoint1
+    usbcore.o(.text) refers to usbhw_stm32f10x.o(.text) for USB_ReadEP
+    usbcore.o(.text) refers to usbcore.o(.data) for .data
+    usbcore.o(.text) refers to usbdesc.o(.constdata) for USB_DeviceDescriptor
+    usbcore.o(.text) refers to usbdesc.o(.constdata) for USB_ConfigDescriptor
+    usbcore.o(.text) refers to usbdesc.o(.constdata) for USB_StringDescriptor
+    usbcore.o(.text) refers to usbuser.o(.text) for USB_Configure_Event
+    usbhw_stm32f10x.o(.text) refers to usbhw_stm32f10x.o(.data) for .data
+    usbhw_stm32f10x.o(.text) refers to usbuser.o(.constdata) for USB_P_EP
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8.o(.ARM.Collect$$$$00000009) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_stm32l1xx_md.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32l1xx_md.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry8.o(.ARM.Collect$$$$00000009) refers to app.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing swd.o(.rev16_text), (4 bytes).
+    Removing swd.o(.revsh_text), (4 bytes).
+    Removing app.o(.rev16_text), (4 bytes).
+    Removing app.o(.revsh_text), (4 bytes).
+    Removing startup_stm32l1xx_md.o(HEAP), (512 bytes).
+    Removing system_stm32l1xx.o(.rev16_text), (4 bytes).
+    Removing system_stm32l1xx.o(.revsh_text), (4 bytes).
+    Removing protocol.o(.rev16_text), (4 bytes).
+    Removing protocol.o(.revsh_text), (4 bytes).
+    Removing usbuser.o(.rev16_text), (4 bytes).
+    Removing usbuser.o(.revsh_text), (4 bytes).
+    Removing usbcore.o(.rev16_text), (4 bytes).
+    Removing usbcore.o(.revsh_text), (4 bytes).
+    Removing usbdesc.o(.rev16_text), (4 bytes).
+    Removing usbdesc.o(.revsh_text), (4 bytes).
+    Removing usbhw_stm32f10x.o(.rev16_text), (4 bytes).
+    Removing usbhw_stm32f10x.o(.revsh_text), (4 bytes).
+
+17 unused section(s) (total 576 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry2.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry8.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry5.o ABSOLUTE
+    ..\App\App.c                             0x00000000   Number         0  app.o ABSOLUTE
+    ..\App\protocol.c                        0x00000000   Number         0  protocol.o ABSOLUTE
+    ..\App\startup_stm32l1xx_md.s            0x00000000   Number         0  startup_stm32l1xx_md.o ABSOLUTE
+    ..\App\system_stm32l1xx.c                0x00000000   Number         0  system_stm32l1xx.o ABSOLUTE
+    ..\App\usbuser.c                         0x00000000   Number         0  usbuser.o ABSOLUTE
+    ..\SWD\SWD.c                             0x00000000   Number         0  swd.o ABSOLUTE
+    ..\USB\usbcore.c                         0x00000000   Number         0  usbcore.o ABSOLUTE
+    ..\USB\usbdesc.c                         0x00000000   Number         0  usbdesc.o ABSOLUTE
+    ..\USB\usbhw_STM32F10x.c                 0x00000000   Number         0  usbhw_stm32f10x.o ABSOLUTE
+    ..\\App\\App.c                           0x00000000   Number         0  app.o ABSOLUTE
+    ..\\App\\protocol.c                      0x00000000   Number         0  protocol.o ABSOLUTE
+    ..\\App\\system_stm32l1xx.c              0x00000000   Number         0  system_stm32l1xx.o ABSOLUTE
+    ..\\App\\usbuser.c                       0x00000000   Number         0  usbuser.o ABSOLUTE
+    ..\\SWD\\SWD.c                           0x00000000   Number         0  swd.o ABSOLUTE
+    ..\\USB\\usbcore.c                       0x00000000   Number         0  usbcore.o ABSOLUTE
+    ..\\USB\\usbdesc.c                       0x00000000   Number         0  usbdesc.o ABSOLUTE
+    ..\\USB\\usbhw_STM32F10x.c               0x00000000   Number         0  usbhw_stm32f10x.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    RESET                                    0x08000000   Section      244  startup_stm32l1xx_md.o(RESET)
+    .ARM.Collect$$$$00000000                 0x080000f4   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x080000f4   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x080000f8   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x080000fc   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$00000009                 0x080000fc   Section        8  entry8.o(.ARM.Collect$$$$00000009)
+    .ARM.Collect$$$$00002712                 0x08000104   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x08000104   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x08000108   Section        0  swd.o(.text)
+    .text                                    0x08000508   Section        0  app.o(.text)
+    .text                                    0x08000650   Section       36  startup_stm32l1xx_md.o(.text)
+    .text                                    0x08000674   Section        0  system_stm32l1xx.o(.text)
+    .text                                    0x08000804   Section        0  protocol.o(.text)
+    .text                                    0x08000eb0   Section        0  usbuser.o(.text)
+    .text                                    0x08000fd4   Section        0  usbcore.o(.text)
+    .text                                    0x08001660   Section        0  usbhw_stm32f10x.o(.text)
+    .text                                    0x08001a9c   Section       36  init.o(.text)
+    i.__scatterload_copy                     0x08001ac0   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08001ace   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08001ad0   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .constdata                               0x08001ade   Section       39  protocol.o(.constdata)
+    .constdata                               0x08001b08   Section       64  usbuser.o(.constdata)
+    .constdata                               0x08001b48   Section       18  usbdesc.o(.constdata)
+    .constdata                               0x08001b5a   Section       47  usbdesc.o(.constdata)
+    .constdata                               0x08001b89   Section       92  usbdesc.o(.constdata)
+    .data                                    0x20000000   Section       26  app.o(.data)
+    jtag2swd                                 0x20000004   Data          22  app.o(.data)
+    .data                                    0x2000001c   Section       29  system_stm32l1xx.o(.data)
+    .data                                    0x2000003c   Section       20  protocol.o(.data)
+    .data                                    0x20000050   Section       24  usbuser.o(.data)
+    USB_RequestCount                         0x20000050   Data           1  usbuser.o(.data)
+    USB_ResponseIdle                         0x20000051   Data           1  usbuser.o(.data)
+    USB_ResponseCount                        0x20000052   Data           1  usbuser.o(.data)
+    usb_configged                            0x20000054   Data           4  usbuser.o(.data)
+    USB_RequestIn                            0x20000058   Data           4  usbuser.o(.data)
+    USB_RequestOut                           0x2000005c   Data           4  usbuser.o(.data)
+    USB_ResponseIn                           0x20000060   Data           4  usbuser.o(.data)
+    USB_ResponseOut                          0x20000064   Data           4  usbuser.o(.data)
+    .data                                    0x20000068   Section       44  usbcore.o(.data)
+    .data                                    0x20000094   Section        8  usbhw_stm32f10x.o(.data)
+    .bss                                     0x2000009c   Section      128  app.o(.bss)
+    in                                       0x2000009c   Data          64  app.o(.bss)
+    out                                      0x200000dc   Data          64  app.o(.bss)
+    .bss                                     0x2000011c   Section     8256  usbuser.o(.bss)
+    USB_Request                              0x2000011c   Data        4096  usbuser.o(.bss)
+    USB_Response                             0x2000111c   Data        4096  usbuser.o(.bss)
+    USB_ResponseLen                          0x2000211c   Data          64  usbuser.o(.bss)
+    STACK                                    0x20002160   Section     1024  startup_stm32l1xx_md.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  app.o ABSOLUTE
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    __Vectors_Size                           0x000000f4   Number         0  startup_stm32l1xx_md.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_stm32l1xx_md.o(RESET)
+    __Vectors_End                            0x080000f4   Data           0  startup_stm32l1xx_md.o(RESET)
+    __main                                   0x080000f5   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x080000f5   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x080000f9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x080000fd   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x080000fd   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_init                               0x080000fd   Thumb Code     0  entry8.o(.ARM.Collect$$$$00000009)
+    SWDOutTMSTCK                             0x08000109   Thumb Code    78  swd.o(.text)
+    SWDTransfer                              0x08000157   Thumb Code   912  swd.o(.text)
+    Delayms                                  0x08000509   Thumb Code    36  app.o(.text)
+    main                                     0x0800052d   Thumb Code   272  app.o(.text)
+    Reset_Handler                            0x08000651   Thumb Code     8  startup_stm32l1xx_md.o(.text)
+    NMI_Handler                              0x08000659   Thumb Code     2  startup_stm32l1xx_md.o(.text)
+    HardFault_Handler                        0x0800065b   Thumb Code     2  startup_stm32l1xx_md.o(.text)
+    MemManage_Handler                        0x0800065d   Thumb Code     2  startup_stm32l1xx_md.o(.text)
+    BusFault_Handler                         0x0800065f   Thumb Code     2  startup_stm32l1xx_md.o(.text)
+    UsageFault_Handler                       0x08000661   Thumb Code     2  startup_stm32l1xx_md.o(.text)
+    SVC_Handler                              0x08000663   Thumb Code     2  startup_stm32l1xx_md.o(.text)
+    DebugMon_Handler                         0x08000665   Thumb Code     2  startup_stm32l1xx_md.o(.text)
+    PendSV_Handler                           0x08000667   Thumb Code     2  startup_stm32l1xx_md.o(.text)
+    SysTick_Handler                          0x08000669   Thumb Code     2  startup_stm32l1xx_md.o(.text)
+    ADC1_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    COMP_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    DAC_IRQHandler                           0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    DMA1_Channel1_IRQHandler                 0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    DMA1_Channel2_IRQHandler                 0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    DMA1_Channel3_IRQHandler                 0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    DMA1_Channel4_IRQHandler                 0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    DMA1_Channel5_IRQHandler                 0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    DMA1_Channel6_IRQHandler                 0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    DMA1_Channel7_IRQHandler                 0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    EXTI0_IRQHandler                         0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    EXTI15_10_IRQHandler                     0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    EXTI1_IRQHandler                         0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    EXTI2_IRQHandler                         0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    EXTI3_IRQHandler                         0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    EXTI4_IRQHandler                         0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    EXTI9_5_IRQHandler                       0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    FLASH_IRQHandler                         0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    I2C1_ER_IRQHandler                       0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    I2C1_EV_IRQHandler                       0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    I2C2_ER_IRQHandler                       0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    I2C2_EV_IRQHandler                       0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    LCD_IRQHandler                           0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    PVD_IRQHandler                           0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    RCC_IRQHandler                           0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    RTC_Alarm_IRQHandler                     0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    RTC_WKUP_IRQHandler                      0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    SPI1_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    SPI2_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    TAMPER_STAMP_IRQHandler                  0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    TIM10_IRQHandler                         0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    TIM11_IRQHandler                         0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    TIM2_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    TIM3_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    TIM4_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    TIM6_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    TIM7_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    TIM9_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    USART1_IRQHandler                        0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    USART2_IRQHandler                        0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    USART3_IRQHandler                        0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    USB_FS_WKUP_IRQHandler                   0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    USB_HP_IRQHandler                        0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    WWDG_IRQHandler                          0x0800066b   Thumb Code     0  startup_stm32l1xx_md.o(.text)
+    SystemInit                               0x08000675   Thumb Code   214  system_stm32l1xx.o(.text)
+    SystemCoreClockUpdate                    0x0800074b   Thumb Code   132  system_stm32l1xx.o(.text)
+    XLINK_Info                               0x08000805   Thumb Code   132  protocol.o(.text)
+    XLINK_LED                                0x08000889   Thumb Code    72  protocol.o(.text)
+    XLINK_Connect                            0x080008d1   Thumb Code    50  protocol.o(.text)
+    XLINK_Disconnect                         0x08000903   Thumb Code    16  protocol.o(.text)
+    XLINK_SWJ_Pins                           0x08000913   Thumb Code   168  protocol.o(.text)
+    XLINK_SWJ_Clock                          0x080009bb   Thumb Code    26  protocol.o(.text)
+    XLINK_SWJ_Sequence                       0x080009d5   Thumb Code    32  protocol.o(.text)
+    XLINK_SWD_Configure                      0x080009f5   Thumb Code    26  protocol.o(.text)
+    XLINK_SWD_Abort                          0x08000a0f   Thumb Code    32  protocol.o(.text)
+    XLINK_TransferConfigure                  0x08000a2f   Thumb Code    26  protocol.o(.text)
+    XLINK_SWDTransferBlock                   0x08000a49   Thumb Code   272  protocol.o(.text)
+    ProtocolProcCommand                      0x08000b59   Thumb Code   608  protocol.o(.text)
+    ProtocolInit                             0x08000db9   Thumb Code   208  protocol.o(.text)
+    USB_configured                           0x08000eb1   Thumb Code     6  usbuser.o(.text)
+    USB_Configure_Event                      0x08000eb7   Thumb Code    24  usbuser.o(.text)
+    USB_EndPoint1                            0x08000ecf   Thumb Code   110  usbuser.o(.text)
+    USB_ProcessCommand                       0x08000f3d   Thumb Code   106  usbuser.o(.text)
+    USB_EndPoint2                            0x08000fa7   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint3                            0x08000fa9   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint4                            0x08000fab   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint5                            0x08000fad   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint6                            0x08000faf   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint7                            0x08000fb1   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint8                            0x08000fb3   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint9                            0x08000fb5   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint10                           0x08000fb7   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint11                           0x08000fb9   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint12                           0x08000fbb   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint13                           0x08000fbd   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint14                           0x08000fbf   Thumb Code     2  usbuser.o(.text)
+    USB_EndPoint15                           0x08000fc1   Thumb Code     2  usbuser.o(.text)
+    USB_ResetCore                            0x08000fd5   Thumb Code    22  usbcore.o(.text)
+    USB_SetupStage                           0x08000feb   Thumb Code     8  usbcore.o(.text)
+    USB_DataInStage                          0x08000ff3   Thumb Code    34  usbcore.o(.text)
+    USB_DataOutStage                         0x08001015   Thumb Code    26  usbcore.o(.text)
+    USB_StatusInStage                        0x0800102f   Thumb Code    10  usbcore.o(.text)
+    USB_StatusOutStage                       0x08001039   Thumb Code     8  usbcore.o(.text)
+    USB_EndPoint0                            0x08001041   Thumb Code  1552  usbcore.o(.text)
+    EP_Reset                                 0x08001661   Thumb Code    38  usbhw_stm32f10x.o(.text)
+    EP_Status                                0x08001687   Thumb Code    50  usbhw_stm32f10x.o(.text)
+    USB_Init                                 0x080016b9   Thumb Code    30  usbhw_stm32f10x.o(.text)
+    USB_Connect                              0x080016d7   Thumb Code    90  usbhw_stm32f10x.o(.text)
+    USB_Reset                                0x08001731   Thumb Code    54  usbhw_stm32f10x.o(.text)
+    USB_Suspend                              0x08001767   Thumb Code    20  usbhw_stm32f10x.o(.text)
+    USB_Resume                               0x0800177b   Thumb Code     2  usbhw_stm32f10x.o(.text)
+    USB_WakeUp                               0x0800177d   Thumb Code    12  usbhw_stm32f10x.o(.text)
+    USB_WakeUpCfg                            0x08001789   Thumb Code     2  usbhw_stm32f10x.o(.text)
+    USB_SetAddress                           0x0800178b   Thumb Code    10  usbhw_stm32f10x.o(.text)
+    USB_Configure                            0x08001795   Thumb Code    14  usbhw_stm32f10x.o(.text)
+    USB_ConfigEP                             0x080017a3   Thumb Code   136  usbhw_stm32f10x.o(.text)
+    USB_DirCtrlEP                            0x0800182b   Thumb Code     2  usbhw_stm32f10x.o(.text)
+    USB_EnableEP                             0x0800182d   Thumb Code     6  usbhw_stm32f10x.o(.text)
+    USB_DisableEP                            0x08001833   Thumb Code     4  usbhw_stm32f10x.o(.text)
+    USB_ResetEP                              0x08001837   Thumb Code    38  usbhw_stm32f10x.o(.text)
+    USB_SetStallEP                           0x0800185d   Thumb Code     6  usbhw_stm32f10x.o(.text)
+    USB_ClrStallEP                           0x08001863   Thumb Code    38  usbhw_stm32f10x.o(.text)
+    USB_ClearEPBuf                           0x08001889   Thumb Code     2  usbhw_stm32f10x.o(.text)
+    USB_ReadEP                               0x0800188b   Thumb Code    72  usbhw_stm32f10x.o(.text)
+    USB_WriteEP                              0x080018d3   Thumb Code   128  usbhw_stm32f10x.o(.text)
+    USB_GetFrame                             0x08001953   Thumb Code    10  usbhw_stm32f10x.o(.text)
+    USB_LP_IRQHandler                        0x0800195d   Thumb Code   320  usbhw_stm32f10x.o(.text)
+    __scatterload                            0x08001a9d   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x08001a9d   Thumb Code     0  init.o(.text)
+    __scatterload_copy                       0x08001ac1   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08001acf   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08001ad1   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    XLINK_FW_Ver                             0x08001ade   Data           4  protocol.o(.constdata)
+    XLINK_Vendor                             0x08001ae2   Data           8  protocol.o(.constdata)
+    XLINK_Product                            0x08001aea   Data          16  protocol.o(.constdata)
+    XLINK_SerNum                             0x08001afa   Data          11  protocol.o(.constdata)
+    USB_P_EP                                 0x08001b08   Data          64  usbuser.o(.constdata)
+    USB_DeviceDescriptor                     0x08001b48   Data          18  usbdesc.o(.constdata)
+    USB_ConfigDescriptor                     0x08001b5a   Data          47  usbdesc.o(.constdata)
+    USB_StringDescriptor                     0x08001b89   Data          92  usbdesc.o(.constdata)
+    Region$$Table$$Base                      0x08001be8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001c08   Number         0  anon$$obj.o(Region$$Table)
+    id                                       0x20000000   Data           4  app.o(.data)
+    SystemCoreClock                          0x2000001c   Data           4  system_stm32l1xx.o(.data)
+    PLLMulTable                              0x20000020   Data           9  system_stm32l1xx.o(.data)
+    AHBPrescTable                            0x20000029   Data          16  system_stm32l1xx.o(.data)
+    fast_clock                               0x2000003c   Data           1  protocol.o(.data)
+    turnaround                               0x2000003d   Data           1  protocol.o(.data)
+    data_phase                               0x2000003e   Data           1  protocol.o(.data)
+    idle_cycles                              0x2000003f   Data           1  protocol.o(.data)
+    abortTransfer                            0x20000040   Data           1  protocol.o(.data)
+    retry_count                              0x20000042   Data           2  protocol.o(.data)
+    match_retry                              0x20000044   Data           2  protocol.o(.data)
+    clock_delay                              0x20000048   Data           4  protocol.o(.data)
+    match_mask                               0x2000004c   Data           4  protocol.o(.data)
+    USB_DeviceAddress                        0x20000068   Data           1  usbcore.o(.data)
+    USB_Configuration                        0x20000069   Data           1  usbcore.o(.data)
+    USB_NumInterfaces                        0x2000006a   Data           1  usbcore.o(.data)
+    USB_AltSetting                           0x2000006b   Data           1  usbcore.o(.data)
+    USB_DeviceStatus                         0x2000006c   Data           2  usbcore.o(.data)
+    USB_EndPointMask                         0x20000070   Data           4  usbcore.o(.data)
+    USB_EndPointHalt                         0x20000074   Data           4  usbcore.o(.data)
+    USB_EndPointStall                        0x20000078   Data           4  usbcore.o(.data)
+    EP0Buf                                   0x2000007c   Data           8  usbcore.o(.data)
+    EP0Data                                  0x20000084   Data           8  usbcore.o(.data)
+    SetupPacket                              0x2000008c   Data           8  usbcore.o(.data)
+    FreeBufAddr                              0x20000094   Data           2  usbhw_stm32f10x.o(.data)
+    pBUF_DSCR                                0x20000098   Data           4  usbhw_stm32f10x.o(.data)
+    __initial_sp                             0x20002560   Data           0  startup_stm32l1xx_md.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080000f5
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001ca4, Max: 0x00020000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00001c08, Max: 0x00020000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x000000f4   Data   RO          107    RESET               startup_stm32l1xx_md.o
+    0x080000f4   0x00000000   Code   RO          322  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080000f4   0x00000004   Code   RO          325    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080000f8   0x00000004   Code   RO          328    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080000fc   0x00000000   Code   RO          330    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080000fc   0x00000008   Code   RO          331    .ARM.Collect$$$$00000009  mc_w.l(entry8.o)
+    0x08000104   0x00000004   Code   RO          326    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000108   0x00000400   Code   RO            3    .text               swd.o
+    0x08000508   0x00000148   Code   RO           63    .text               app.o
+    0x08000650   0x00000024   Code   RO          108    .text               startup_stm32l1xx_md.o
+    0x08000674   0x00000190   Code   RO          114    .text               system_stm32l1xx.o
+    0x08000804   0x000006ac   Code   RO          140    .text               protocol.o
+    0x08000eb0   0x00000124   Code   RO          177    .text               usbuser.o
+    0x08000fd4   0x0000068c   Code   RO          211    .text               usbcore.o
+    0x08001660   0x0000043c   Code   RO          289    .text               usbhw_stm32f10x.o
+    0x08001a9c   0x00000024   Code   RO          332    .text               mc_w.l(init.o)
+    0x08001ac0   0x0000000e   Code   RO          336    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08001ace   0x00000002   Code   RO          337    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08001ad0   0x0000000e   Code   RO          338    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08001ade   0x00000027   Data   RO          141    .constdata          protocol.o
+    0x08001b05   0x00000003   PAD
+    0x08001b08   0x00000040   Data   RO          179    .constdata          usbuser.o
+    0x08001b48   0x00000012   Data   RO          266    .constdata          usbdesc.o
+    0x08001b5a   0x0000002f   Data   RO          267    .constdata          usbdesc.o
+    0x08001b89   0x0000005c   Data   RO          268    .constdata          usbdesc.o
+    0x08001be5   0x00000003   PAD
+    0x08001be8   0x00000020   Data   RO          334    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00002560, Max: 0x00004000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000001a   Data   RW           65    .data               app.o
+    0x2000001a   0x00000002   PAD
+    0x2000001c   0x0000001d   Data   RW          115    .data               system_stm32l1xx.o
+    0x20000039   0x00000003   PAD
+    0x2000003c   0x00000014   Data   RW          142    .data               protocol.o
+    0x20000050   0x00000018   Data   RW          180    .data               usbuser.o
+    0x20000068   0x0000002c   Data   RW          212    .data               usbcore.o
+    0x20000094   0x00000008   Data   RW          290    .data               usbhw_stm32f10x.o
+    0x2000009c   0x00000080   Zero   RW           64    .bss                app.o
+    0x2000011c   0x00002040   Zero   RW          178    .bss                usbuser.o
+    0x2000215c   0x00000004   PAD
+    0x20002160   0x00000400   Zero   RW          105    STACK               startup_stm32l1xx_md.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       328         20          0         26        128       7978   app.o
+      1708        104         39         20          0       8963   protocol.o
+        36          8        244          0       1024        744   startup_stm32l1xx_md.o
+      1024         34          0          0          0     186212   swd.o
+       400         54          0         29          0       1603   system_stm32l1xx.o
+      1676         76          0         44          0       7581   usbcore.o
+         0          0        157          0          0        633   usbdesc.o
+      1084         62          0          8          0      31763   usbhw_stm32f10x.o
+       292         18         64         24       8256       3623   usbuser.o
+
+    ----------------------------------------------------------------------
+      6548        376        542        156       9412     249100   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         0          0          6          5          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         8          4          0          0          0          0   entry8.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+
+    ----------------------------------------------------------------------
+        86         16          0          0          0         68   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        86         16          0          0          0         68   mc_w.l
+
+    ----------------------------------------------------------------------
+        86         16          0          0          0         68   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      6634        392        542        156       9412     248440   Grand Totals
+      6634        392        542        156       9412     248440   ELF Image Totals
+      6634        392        542        156          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 7176 (   7.01kB)
+    Total RW  Size (RW Data + ZI Data)              9568 (   9.34kB)
+    Total ROM Size (Code + RO Data + RW Data)       7332 (   7.16kB)
+
+==============================================================================
+
